@@ -257,7 +257,7 @@ delete o.p // true
 
 只有一种情况，delete命令会返回false，那就是该属性存在，且不得删除。
 
-{% highlight javascript %}
+```javascript
 
 var o = Object.defineProperty({}, "p", {
         value: 123,
@@ -267,7 +267,7 @@ var o = Object.defineProperty({}, "p", {
 o.p // 123
 delete o.p // false
 
-{% endhighlight %}
+```
 
 上面代码之中，o对象的p属性是不能删除的，所以delete命令返回false（关于Object.defineProperty方法的介绍，请看《标准库》一章的Object对象章节）。
 
@@ -394,7 +394,7 @@ for (var key in person) {
 
 如果只想遍历对象本身的属性，可以使用hasOwnProperty方法，在循环内部做一个判断。
 
-{% highlight javascript %}
+```javascript
 
 for (var key in person) {
     if (person.hasOwnProperty(key)) {
@@ -403,7 +403,7 @@ for (var key in person) {
 }
 // name
 
-{% endhighlight %}
+```
 
 为了避免这一点，可以新建一个继承null的对象。由于null没有任何属性，所以新对象也就不会有继承的属性了。
 
@@ -411,16 +411,16 @@ for (var key in person) {
 
 with语句的格式如下：
 
-{% highlight javascript %}
+```javascript
 
 with (object)
   statement
 
-{% endhighlight %}
+```
 
 它的作用是操作同一个对象的多个属性时，提供一些书写的方便。
 
-{% highlight javascript %}
+```javascript
 
 // 例一
 with (o) {
@@ -446,11 +446,11 @@ console.log(document.links[0].href);
 console.log(document.links[0].title);
 console.log(document.links[0].style);
 
-{% endhighlight %}
+```
 
 注意，with区块内部的变量，必须是当前对象已经存在的属性，否则会创造一个当前作用域的全局变量。这是因为with区块没有改变作用域，它的内部依然是当前作用域。
 
-{% highlight javascript %}
+```javascript
 
 var o = {};
 
@@ -464,11 +464,11 @@ o.x
 x
 // "abc"
 
-{% endhighlight %}
+```
 
 上面代码中，对象o没有属性x，所以with区块内部对x的操作，等于创造了一个全局变量x。正确的写法应该是，先定义对象o的属性x，然后在with区块内操作它。
 
-{% highlight javascript %}
+```javascript
 
 var o = {};
 
@@ -481,21 +481,21 @@ with (o){
 o.x
 // 2
 
-{% endhighlight %}
+```
 
 这是with语句的一个很大的弊病，就是绑定对象不明确。
 
-{% highlight javascript %}
+```javascript
 
 with (o) {
   console.log(x);
 }
 
-{% endhighlight %}
+```
 
 单纯从上面的代码块，根本无法判断x到底是全局变量，还是o对象的一个属性。这非常不利于代码的除错和模块化，编译器也无法对这段代码进行优化，只能留到运行时判断，这就拖慢了运行速度。因此，建议不要使用with语句，可以考虑用一个临时变量代替with。
 
-{% highlight javascript %}
+```javascript
 
 with(o1.o2.o3) {
   console.log(p1 + p2);
@@ -506,7 +506,7 @@ with(o1.o2.o3) {
 var temp = o1.o2.o3;
 console.log(temp.p1 + temp.p2);
 
-{% endhighlight %}
+```
 
 with语句少数有用场合之一，就是替换模板变量。
 

@@ -206,7 +206,7 @@ para.onclick = hello;
 
 ```html
 <p id="para" onclick="hello()">Hello</p>
-<!-- 或者使用JavaScript代码  -->
+
 <script>
   pElement.setAttribute('onclick', 'hello()');
 </script>

@@ -61,22 +61,22 @@
 - [Performance API](bom/performance.md)
 - [移动设备API](bom/mobile.md)
 
-<h2 id="mdapi">md网页的API</h2>
+<h2 id="htmlapi">md网页的API</h2>
 
-- [md网页元素](mdapi/elements.md)
-- [Canvas](mdapi/canvas.md)
-- [SVG图像](mdapi/svg.md)
-- [表单](mdapi/form.md)
-- [文件与二进制数据的操作](mdapi/file.md)
-- [Web Worker](mdapi/webworker.md)
-- [SSE：服务器发送事件](mdapi/eventsource.md)
-- [Page Visiblity](mdapi/pagevisibility.md)
-- [FullScreen API：全屏操作](mdapi/fullscreen.md)
-- [Web Speech](mdapi/webspeech.md)
-- [requestAnimationFrame](mdapi/requestanimationframe.md)
-- [WebSocket](mdapi/websocket.md)
-- [WebRTC](mdapi/webrtc.md)
-- [Web Components](mdapi/webcomponents.md)
+- [md网页元素](htmlapi/elements.md)
+- [Canvas](htmlapi/canvas.md)
+- [SVG图像](htmlapi/svg.md)
+- [表单](htmlapi/form.md)
+- [文件与二进制数据的操作](htmlapi/file.md)
+- [Web Worker](htmlapi/webworker.md)
+- [SSE：服务器发送事件](htmlapi/eventsource.md)
+- [Page Visiblity](htmlapi/pagevisibility.md)
+- [FullScreen API：全屏操作](htmlapi/fullscreen.md)
+- [Web Speech](htmlapi/webspeech.md)
+- [requestAnimationFrame](htmlapi/requestanimationframe.md)
+- [WebSocket](htmlapi/websocket.md)
+- [WebRTC](htmlapi/webrtc.md)
+- [Web Components](htmlapi/webcomponents.md)
 
 <h2 id="tool">开发工具</h2>
 
@@ -98,7 +98,6 @@
 - [MVC模式和Backbone.js](advanced/backbonejs.md)
 - [严格模式](advanced/strict.md)
 
-<hr></hr>
 
 <h2 id="appendix">附录</h2>
 
